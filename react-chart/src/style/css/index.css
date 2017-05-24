@@ -69,5 +69,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background-color: #F8BBD0;
 }

@@ -1,9 +1,103 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
+  "listitem": [
+    {
+      "seller_username": "fuad_pardo",
+      "seller_level": "Pedagang Besar",
+      "seller_avatar": "https://s3.bukalapak.com/avt/8487204/medium/logo_new_warung_raori.JPG",
+      "images": "https://s1.bukalapak.com/img/1499858211/large/Kemeja_Postal_Darknavy_Graphic_Printed_Original.jpg",
+      "name": "Kemeja Postal Darknavy Graphic Printed Original",
+      "price": 149000,
+      "id": 1
+    },
+    {
+      "seller_username": "daffa_3",
+      "seller_level": "Juragan",
+      "seller_avatar": "https://s1.bukalapak.com/avt/6024857/medium/wisata-di-bandung.jpg",
+      "images": "https://s3.bukalapak.com/img/3868240601/large/Celana_Panjang_Cargo_PDL_Tactical_Outdoor_Model_Blackhawk.jpg",
+      "name": "Celana Panjang Cargo/PDL/Tactical Outdoor/Model Blackhawk",
+      "price": 127000,
+      "id": 2
+    },
+    {
+      "seller_username": "diysimart",
+      "seller_level": "Pedagang Besar",
+      "seller_avatar": "https://s1.bukalapak.com/avt/1721897/medium/1481794740098_scaled.jpg",
+      "images": "https://s2.bukalapak.com/img/729162287/large/Buy_1_Get_1___Parfum_Bvlgari_BLV_Pour_Woman_Edt_100ml.jpg",
+      "name": "Buy 1 Get 1!! Parfum Bvlgari BLV Pour Woman Edt 100ml",
+      "price": 93900,
+      "id": 3
+    },
+    {
+      "seller_username": "fredysiswanto",
+      "seller_level": "Juragan",
+      "seller_avatar": "https://s2.bukalapak.com/avt/7147792/medium/IMG_1553.JPG",
+      "images": "https://s3.bukalapak.com/img/898722941/large/Timer.png",
+      "name": "Timer Irigasi Model Baru Lebih Mudah Pengoperasiannya Dan Lebih Awet",
+      "price": 225000,
+      "id": 4
+    },
+    {
+      "seller_username": "ot_design",
+      "seller_level": "Juragan",
+      "seller_avatar": "https://s3.bukalapak.com/avt/8561738/medium/logo_ot_design.png",
+      "images": "https://s1.bukalapak.com/img/6378891421/large/Kaos_Distro_Favorite_Position_CEO___entrepreneur_pengusaha_w.JPG",
+      "name": "Kaos Distro Favorite Position CEO - entrepreneur pengusaha wirausaha bisnis ukm umkm MERAH",
+      "price": 85000,
+      "id": 5
+    },
+    {
+      "seller_username": "ot_design",
+      "seller_level": "Juragan",
+      "seller_avatar": "https://s3.bukalapak.com/avt/8561738/medium/logo_ot_design.png",
+      "images": "https://s1.bukalapak.com/img/6105991421/large/Kaos_Distro_Favorite_Position_CEO___entrepreneur_pengusaha_w.JPG",
+      "name": "Kaos Distro Favorite Position CEO - entrepreneur pengusaha wirausaha bisnis ukm umkm PUTIH",
+      "price": 85000,
+      "id": 6
+    },
+    {
+      "seller_username": "crew_motor",
+      "seller_level": "Pedagang Besar",
+      "seller_avatar": "https://s1.bukalapak.com/avt/1761085/medium/20160719_141102_scaled.jpg",
+      "images": "https://s3.bukalapak.com/img/347349673/large/mtech_mm_8805_gps___mm8805___head_unit___double_din___tape_m.jpg",
+      "name": "mtech mm 8805 gps / mm8805 / head unit / double din / tape mobil / tv gps",
+      "price": 3800000,
+      "id": 7
+    },
+    {
+      "seller_username": "crew_motor",
+      "seller_level": "Pedagang Besar",
+      "seller_avatar": "https://s1.bukalapak.com/avt/1761085/medium/20160719_141102_scaled.jpg",
+      "images": "https://s4.bukalapak.com/img/959528693/large/mtech_mm_8701_gps___mm8701___head_unit___tape_mobil___double.jpg",
+      "name": "mtech mm 8701 gps / mm8701 / head unit / tape mobil / double din / tv gps",
+      "price": 2850000,
+      "id": 8
+    },
+    {
+      "seller_username": "ot_design",
+      "seller_level": "Juragan",
+      "seller_avatar": "https://s3.bukalapak.com/avt/8561738/medium/logo_ot_design.png",
+      "images": "https://s1.bukalapak.com/img/1104891421/large/Kaos_Distro_Favorite_Position_CEO___entrepreneur_pengusaha_w.JPG",
+      "name": "Kaos Distro Favorite Position CEO - entrepreneur pengusaha wirausaha bisnis ukm umkm NAVY",
+      "price": 85000,
+      "id": 9
+    },
+    {
+      "seller_username": "ot_design",
+      "seller_level": "Juragan",
+      "seller_avatar": "https://s3.bukalapak.com/avt/8561738/medium/logo_ot_design.png",
+      "images": "https://s1.bukalapak.com/img/1268791421/large/Kaos_Distro_Favorite_Position_CEO___entrepreneur_pengusaha_w.JPG",
+      "name": "Kaos Distro Favorite Position CEO - entrepreneur pengusaha wirausaha bisnis ukm umkm HITAM",
+      "price": 85000,
+      "id": 10
+    }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
+  "db": [
+    {
+      "status": "true",
+      "id": 1
+    }
   ],
-  "profile": { "name": "typicode" }
+  "chart":[
+    
+  ]
 }
