@@ -2,7 +2,23 @@ import axios from 'axios';
 export const ADD_CHART = 'ADD_CHART'
 export const UPDATE_CHART = 'UPDATE_CHART'
 export const SEED_CHART = 'SEED_CHART'
+export const DELETE_CHART = 'DELETE_CHART'
 
+export function seedchartsuccess(value) {
+  return {
+    type: SEED_CHART,
+    value
+  }
+}
+
+export function seedchart() {
+  return dispatch => {
+    return axios.get('http://localhost:8000/chart')
+      .then(function(response) {
+          dispatch(seedchartsuccess(response.data))
+      })
+  }
+}
 export function addchartsuccess(value) {
   return {
     type: ADD_CHART,
@@ -43,18 +59,18 @@ export function updatechart(data) {
   }
 }
 
-export function seedchartsuccess(value) {
+export function deletechartsuccess(index) {
   return {
-    type: SEED_CHART,
-    value
+    type: DELETE_CHART,
+    index
   }
 }
 
-export function seedchart() {
+export function deletechart(data) {
   return dispatch => {
-    return axios.get('http://localhost:8000/chart')
+    return axios.delete('http://localhost:8000/chart/'+data.id)
       .then(function(response) {
-          dispatch(seedchartsuccess(response.data))
+          dispatch(deletechartsuccess(data.index))
       })
   }
 }

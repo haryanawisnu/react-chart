@@ -4,10 +4,17 @@ import {
   BUKALAPAK_KEY_VALUE
 } from '../../env/key'
 export const SEED_ITEM = 'SEED_ITEM'
+export const SEARCH_ITEM = 'SEARCH_ITEM'
 
 export function seeditemSuccess(value) {
   return {
     type: SEED_ITEM,
+    value
+  }
+}
+export function searchitem(value) {
+  return {
+    type: SEARCH_ITEM,
     value
   }
 }
