@@ -13,20 +13,21 @@ import { connect } from 'react-redux'
 import { seedchart,addchart,updatechart,deletechart } from '../data/action/chart'
 import CircularProgress from 'material-ui/CircularProgress';
 import Dialog from 'material-ui/Dialog';
+import Slider from 'material-ui/Slider';
 
 class Chart extends Component {
   constructor(props){
     super(props)
     this.state = {
       open: false,
-      obj:{}
+      obj:{},
+      qty:0
     };
   }
   componentDidMount(){
     this.props.seedchart()
   }
   handleOpen = (e,id) => {
-    console.log(e,id);
     let obj={};
     obj.id=e;
     obj.index=id;
@@ -39,6 +40,18 @@ class Chart extends Component {
   handleClose2 = () => {
     this.props.deletechart(this.state.obj);
     this.setState({open: false});
+  };
+  handleSlider = (event ,value) => {
+    this.setState({qty: value});
+  };
+  handleSliderStop = (data,index,event) => {
+    let obj={};
+    obj.index=index;
+    obj.id=data.id;
+    obj.name=data.name;
+    obj.price=data.price;
+    obj.qty=this.state.qty;
+    this.props.updatechart(obj);
   };
   render() {
     const actions = [
@@ -60,12 +73,16 @@ class Chart extends Component {
     return (
       <div>
       <Table>
-        <TableHeader  adjustForCheckbox={false} displaySelectAll={false}>
+        <TableHeader  adjustForCheckbox={false} displaySelectAll={false} >
+          <TableRow >
+            <TableHeaderColumn colSpan="5" style={{textAlign: 'center'}}>UPDATE QUANTITY : {this.state.qty}</TableHeaderColumn>
+          </TableRow>
           <TableRow>
             <TableHeaderColumn>Name</TableHeaderColumn>
             <TableHeaderColumn>Price</TableHeaderColumn>
             <TableHeaderColumn>Quantity</TableHeaderColumn>
-            <TableHeaderColumn>Action</TableHeaderColumn>
+            <TableHeaderColumn>Slider Quantity</TableHeaderColumn>
+            <TableHeaderColumn>Delete</TableHeaderColumn>
           </TableRow>
         </TableHeader>
         <TableBody displayRowCheckbox={false}>
@@ -75,6 +92,7 @@ class Chart extends Component {
               <TableRowColumn>{chart.name}</TableRowColumn>
               <TableRowColumn>{chart.price}</TableRowColumn>
               <TableRowColumn>{chart.qty}</TableRowColumn>
+              <Slider min={1} max={25} step={1} value={chart.qty} onChange={this.handleSlider} onDragStop={this.handleSliderStop.bind(this,chart,index)}/>
               <TableRowColumn><FlatButton backgroundColor="#D50000" hoverColor="#FF1744" icon={<FontAwesome name='trash' size='2x'/>} onTouchTap={this.handleOpen.bind(this,chart.id,index)}/></TableRowColumn>
             </TableRow>
           )

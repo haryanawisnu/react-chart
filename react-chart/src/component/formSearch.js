@@ -28,11 +28,7 @@ class FormSearch extends Component {
     return (
       <div >
       <Toolbar>
-          <ToolbarGroup style={{witdh:'100%'}}>
             <TextField hintText="Keyword" hintStyle={{color: 'white'}} fullWidth={true} onChange={this.handleChange.bind(this)} />
-            <ToolbarSeparator/>
-            <RaisedButton label="Search" buttonStyle={{backgroundColor:'white'}} labelColor='#212121' />
-          </ToolbarGroup>
       </Toolbar>
       </div>
     );

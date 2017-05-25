@@ -68,7 +68,7 @@ class listItem extends Component {
       <Snackbar
           open={this.state.open}
           message="Adding Your Chart"
-          autoHideDuration={4000}
+          autoHideDuration={2000}
           onRequestClose={this.handleRequestClose}
           bodyStyle={{backgroundColor:'#E91E63'}}
           contentStyle={{color:'white',textAlign:'center'}}

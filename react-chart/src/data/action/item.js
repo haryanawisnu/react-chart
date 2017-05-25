@@ -33,7 +33,7 @@ export function seeditem() {
                 status: 'true'
               }).then(function(responses) {
                 let arr = [];
-                for (var i = 1; i <= 10; i++) {
+                for (var i = 1; i <= 11; i++) {
                   axios.post('http://localhost:8000/listitem', {
                     seller_username: response.data.products[i].seller_username,
                     seller_level: response.data.products[i].seller_level,
