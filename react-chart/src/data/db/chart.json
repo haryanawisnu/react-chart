@@ -97,7 +97,30 @@
       "id": 1
     }
   ],
-  "chart":[
-    
+  "chart": [
+    {
+      "qty": 8,
+      "price": 149000,
+      "name": "Kemeja Postal Darknavy Graphic Printed Original",
+      "id": 1
+    },
+    {
+      "id": 3,
+      "name": "Buy 1 Get 1!! Parfum Bvlgari BLV Pour Woman Edt 100ml",
+      "qty": 1,
+      "price": 93900
+    },
+    {
+      "id": 2,
+      "name": "Celana Panjang Cargo/PDL/Tactical Outdoor/Model Blackhawk",
+      "qty": 1,
+      "price": 127000
+    },
+    {
+      "id": 4,
+      "name": "Timer Irigasi Model Baru Lebih Mudah Pengoperasiannya Dan Lebih Awet",
+      "qty": 1,
+      "price": 225000
+    }
   ]
 }

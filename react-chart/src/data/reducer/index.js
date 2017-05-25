@@ -1,19 +1,9 @@
-import { SEED_ITEM } from '../action'
+import { combineReducers } from 'redux'
 
-const initialState = {
-  id: '',
-  name:'',
-  price:'',
-  list_item: []
-}
+import Item from './item'
+import Chart from './chart'
 
-function Item(state = initialState, action) {
-  switch (action.type) {
-    case SEED_ITEM:
-      return Object.assign({}, state, {list_item: action.value})
-    default:
-      return state
-  }
-}
-
-export default Item
+export default combineReducers({
+  Item,
+  Chart
+})

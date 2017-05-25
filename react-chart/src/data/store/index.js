@@ -2,11 +2,11 @@ import { createStore,applyMiddleware,compose } from 'redux'
 import { logger } from 'redux-logger'
 import thunk from 'redux-thunk';
 
-import Item from '../reducer'
+import combineReducers from '../reducer'
 
 const Middleware=applyMiddleware(logger,thunk)
 
-const store = createStore(Item, compose(
+const store = createStore(combineReducers, compose(
   Middleware,
   window.devToolsExtension ? window.devToolsExtension() : f => f
 ));

@@ -40,8 +40,7 @@ export function seeditem() {
             })
         } else {
           axios.get('http://localhost:8000/listitem').then(function(response) {
-            console.log('hasil ', response.data);
-            dispatch(seeditemSuccess(response.data))
+          dispatch(seeditemSuccess(response.data))
           })
         }
       })
